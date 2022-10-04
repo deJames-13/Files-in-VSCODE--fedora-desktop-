@@ -1,0 +1,21 @@
+.center-me {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rainbow {
+  font-size: 50px;
+  animation: rainbow-animation infinite 8s;
+}
+
+@keyframes rainbow-animation {
+0% {color: red;}
+15% {color: orange;}
+30% {color: yellow;}
+45% {color: green;}
+60% {color: blue;}
+75% {color: indigo;}
+90% {color: violet;}
+}

@@ -1,0 +1,21 @@
+{% extends 'mainApp/base.html' %}
+
+{% block title %}
+    Register
+{% endblock title %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <div class="container-sm d-flex row justify-content-center p-5">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="p-5 border">
+                    {{form|crispy}}
+                    <button class="btn btn-primary" type="submit" name="register">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
+    

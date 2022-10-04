@@ -1,0 +1,38 @@
+headers {
+  padding: 30px;
+  color: getColor(textColor);
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    margin-inline: $mainMargin;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    svg {
+      padding-top: 5px;
+    }
+  }
+  ul {
+    font-size: 1.1em;
+    display: flex;
+    li {
+      padding-inline: 20px;
+      &:hover {
+        transform: scale(0.98);
+        color: getColor(highlightText);
+      }
+    }
+    li:nth-child(1) {
+      font-weight: bold;
+    }
+  }
+  .left-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: getColor(highlightText);
+  }
+}

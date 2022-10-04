@@ -1,0 +1,99 @@
+/* Jetbrains:  */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.dark {
+  --color-main: #58ff90;
+  --color-secondary: #368B85;
+  --color-text: #d6d1d1;
+  --color-dark: #f5f6f7;
+  --color-gray: #B4B897;
+  --color-bg: #2C3333;
+  --color-lighter: #292a2c;
+  --color-white: #2e3235;
+  --color-border: #4c6363;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", sans-serif;
+  color: inherit;
+  font-size: inherit;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  line-height: 1.8em;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg); 
+  color: var(--color-text);
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  max-width: 480px;
+  max-height: 500px;
+  border: 1px solid var(--color-border);
+}
+
+.app-header {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: var(--color-text);
+  font-size: 32px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rainbow {
+  animation: rainbow-animation infinite 8s;
+}
+@keyframes rainbow-animation {
+0% {color: red;}
+15% {color: orange;}
+30% {color: yellow;}
+45% {color: green;}
+60% {color: blue;}
+75% {color: indigo;}
+90% {color: violet;}
+}

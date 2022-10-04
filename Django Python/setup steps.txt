@@ -1,0 +1,12 @@
+install django
+create a dir for django // django_directory1
+in the dir run $ django-admin startproject [project_name]
+cd project_name
+python manage.py runserver
+python manage.py startapp [app_name]
+
+in app_name views.py add views func
+
+create urls.py
+
+in mysite urls.py 

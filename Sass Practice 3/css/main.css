@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  background-color: #0f0f0f;
+}
+
+#bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+#bg img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+headers {
+  padding: 30px;
+  color: #fff;
+}
+headers .header-wrapper {
+  display: flex;
+  align-items: center;
+  margin-inline: 5em;
+}
+headers .logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+headers .logo svg {
+  padding-top: 5px;
+}
+headers ul {
+  font-size: 1.1em;
+  display: flex;
+}
+headers ul li {
+  padding-inline: 20px;
+}
+headers ul li:hover {
+  transform: scale(0.98);
+  color: #00bbff;
+}
+headers ul li:nth-child(1) {
+  font-weight: bold;
+}
+headers .left-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #00bbff;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: 150px;
+}
+.main-container .wrapper-right {
+  max-height: 549px;
+  display: flex;
+  flex-direction: column;
+}
+.main-container .main-header {
+  margin-left: 5em;
+  margin-bottom: 180px;
+}
+.main-container .main-header h1 {
+  font-size: 4.5em;
+}
+.main-container .main-header h4 {
+  padding-right: 10px;
+  font-size: 36px;
+  font-weight: 200;
+}
+.main-container .bottom-wrapper {
+  max-height: 189px;
+  display: flex;
+}
+.main-container .bottom-wrapper .left-box {
+  position: relative;
+  height: 800px;
+  width: 270px;
+  background-color: #292929;
+  z-index: -1;
+}
+.main-container .bottom-wrapper .right-box {
+  flex-grow: 1;
+  background-color: red;
+}
+.main-container .activities-wrapper {
+  max-width: 550px;
+  margin-top: 35px;
+  padding-right: 5em;
+  height: 514px;
+  line-height: 1.5;
+  overflow: auto;
+  background-color: rgba(15, 15, 15, 0.5);
+  -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px);
+}
+.main-container .activities-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding-left: 60px;
+}
+.main-container .activities-wrapper h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+.main-container .activities-wrapper p {
+  font-weight: 200;
+  font-size: 20px;
+}

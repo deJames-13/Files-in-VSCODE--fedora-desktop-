@@ -1,0 +1,10 @@
+$mainMargin: 5em;
+$colors: (
+  bg: #0f0f0f,
+  highlightText: #00bbff,
+  textColor: #fff,
+);
+
+@function getColor($name) {
+  @return map-get($map: $colors, $key: $name);
+}

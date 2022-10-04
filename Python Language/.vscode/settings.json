@@ -1,0 +1,14 @@
+{
+    "python.testing.pytestArgs": [
+        "Folder 1"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./Folder 1",
+        "-p",
+        "*test.py"
+    ]
+}

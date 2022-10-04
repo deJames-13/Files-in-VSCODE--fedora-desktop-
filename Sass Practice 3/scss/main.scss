@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import 'config';
+@import 'utilities';
+@import 'headers';
+
+$wrapHeight: 514px;
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  color: getColor(textColor);
+  margin-top: 150px;
+  .wrapper-right {
+    max-height: $wrapHeight + 35;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-header {
+    margin-left: $mainMargin;
+    margin-bottom: 180px;
+    h1 {
+      font-size: 4.5em;
+    }
+    h4 {
+      padding-right: 10px;
+      font-size: 36px;
+      font-weight: 200;
+    }
+  }
+  .bottom-wrapper {
+    max-height: 189px;
+    display: flex;
+    .left-box {
+      position: relative;
+      height: 800px;
+      width: 270px;
+      background-color: lighten(getColor(bg), 10);
+      z-index: -1;
+    }
+    .right-box {
+      flex-grow: 1;
+      background-color: red;
+    }
+  }
+
+  .activities-wrapper {
+    max-width: 550px;
+    margin-top: 35px;
+    padding-right: 5em;
+    height: $wrapHeight;
+    line-height: 1.5;
+    overflow: auto;
+    background-color: transparentize(getColor(bg), 0.5);
+    backdrop-filter: blur(18px);
+    // border: 1px dashed white;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      padding-left: 60px;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    p {
+      font-weight: 200;
+      font-size: 20px;
+    }
+  }
+}

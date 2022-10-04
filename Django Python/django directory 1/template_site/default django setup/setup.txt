@@ -1,0 +1,42 @@
+django-admin startproject [Project Name]
+cd [Project Name]
+python manage.py startapp [App name or 'main']
+cd main
+touch urls.py
+mkdir templates
+mkdir templates/main
+mkdir static
+mkdir static/main
+mkdir templatetags
+touch templatetags/__init__.py
+cd templates/main
+touch base.html home.html view.html
+
+
+in projectName/settings.py:
+add 'main.templatetags'
+add 'main.apps.MainConfig' # this is based on the name of the MAIN APP
+
+in projectName/urls.py:
+in the url patterns imports
+add from django.urls import path, include
+add from main.urls import views
+
+in url patterns
+add path('', include("main.urls"))
+
+
+
+in main/urls.py:
+add from django.urls import path
+add from . import views
+add urlpatterns = [list, of, url, paths]
+
+
+
+
+
+
+
+
+

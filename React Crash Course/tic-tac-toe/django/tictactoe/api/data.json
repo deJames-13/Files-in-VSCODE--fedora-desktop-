@@ -1,0 +1,55 @@
+{
+    "data": [
+        [
+            {
+                "box_id": 1,
+                "player": null,
+                "state": false
+            },
+            {
+                "box_id": 2,
+                "player": null,
+                "state": false
+            },
+            {
+                "box_id": 3,
+                "player": null,
+                "state": false
+            }
+        ],
+        [
+            {
+                "box_id": 4,
+                "player": null,
+                "state": false
+            },
+            {
+                "box_id": 5,
+                "player": null,
+                "state": false
+            },
+            {
+                "box_id": 6,
+                "player": null,
+                "state": false
+            }
+        ],
+        [
+            {
+                "box_id": 7,
+                "player": null,
+                "state": false
+            },
+            {
+                "box_id": 8,
+                "player": null,
+                "state": false
+            },
+            {
+                "box_id": 9,
+                "player": null,
+                "state": false
+            }
+        ]
+    ]
+}

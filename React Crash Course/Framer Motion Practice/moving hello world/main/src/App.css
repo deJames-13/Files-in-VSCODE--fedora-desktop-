@@ -1,0 +1,43 @@
+.center-me {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rainbow {
+  animation: rainbow-animation infinite 2s;
+}
+
+.move {
+  display: inline-block;
+  font-size: 25px;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+@keyframes rainbow-animation {
+  0% {
+    color: red;
+  }
+  15% {
+    color: orange;
+  }
+  30% {
+    color: yellow;
+  }
+  45% {
+    color: green;
+    transform: rotate(1440deg) scale(1.5);
+  }
+  60% {
+    color: blue;
+  }
+  75% {
+    color: indigo;
+  }
+  90% {
+    color: violet;
+  }
+}
